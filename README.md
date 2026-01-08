@@ -39,7 +39,7 @@ To launch the application:
 ```bash
 npm start
 # OR
-yarn start
+yarn run start
 ```
 
 ## Technologies Used
