@@ -37,7 +37,7 @@
 To launch the application:
 
 ```bash
-npm start
+npm run start
 # OR
 yarn run start
 ```
@@ -51,3 +51,4 @@ yarn run start
 ---
 
 _Created by SK_
+
