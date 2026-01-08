@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <title>SK FILE Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-drag-region"></div>
+    <div class="app-container">
+        <!-- Drag Drop Overlay -->
+        <div id="drop-overlay" class="drop-overlay">
+
+            <p>Drop here to Add to Vault!</p>
+        </div>
+
+        <!-- Custom Prompt Modal -->
+        <div id="custom-prompt" class="modal-overlay">
+            <div class="modal-content">
+                <h3 id="prompt-message">Enter Value</h3>
+                <input type="text" id="prompt-input" placeholder="...">
+                <div class="modal-buttons">
+                    <button id="prompt-cancel">Cancel</button>
+                    <button id="prompt-ok">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                SK FILE Manager
+            </div>
+            <nav id="sidebar-nav">
+                <!-- Nav items injected by JS -->
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div class="nav-controls">
+                    <button id="btn-back" class="nav-btn" disabled>⬅️</button>
+                    <button id="btn-forward" class="nav-btn" disabled>➡️</button>
+                </div>
+                <input type="text" id="address-bar" class="address-bar" placeholder="Current Location...">
+                <button class="organize-btn" id="organize-btn">
+                    Clean Up Folder
+                </button>
+            </header>
+            <div class="file-view" id="file-grid">
+                <!-- Files injected by JS -->
+            </div>
+        </main>
+    </div>
+    
+    <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "sk-file-manager",
+  "productName": "SK FILE Manager",
+  "version": "1.0.0",
+  "main": "index.js",
+   "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shawi",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^39.2.7"
+  }
+}
