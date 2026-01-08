@@ -3,13 +3,31 @@
   "productName": "SK FILE Manager",
   "version": "1.0.0",
   "main": "index.js",
-   "scripts": {
+  "scripts": {
     "start": "electron .",
+    "build": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.sk.filemanager",
+    "productName": "SK FILE Manager",
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "**/*",
+      "!dist/*",
+      "!userData/*"
+    ]
   },
   "author": "shawi",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^39.2.7"
+    "electron": "^39.2.7",
+    "electron-builder": "^24.13.3"
   }
 }
